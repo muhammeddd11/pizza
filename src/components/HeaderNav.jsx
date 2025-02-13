@@ -10,17 +10,17 @@ function HeaderNav() {
         }
   return (
     <nav className={`${styles.nav} container`}>
-        <Link to="home" className={styles.nav__logo}>
+        <Link to="/" className={styles.nav__logo}>
         <img src="logo-pizza.svg" alt="Logo"/>
-        Pizaa
+        Pizzat
         </Link>
         {isOpen?<div className={styles.nav__menu} id={styles.nav__menu}>     
             <ul className={styles.nav__list}>
-                <li><Link to="home" className={styles.nav__link}>Home</Link></li>
-                <li><Link to="about" className={styles.nav__link}>About US</Link></li>
-                <li><Link to="popular" className={styles.nav__link}>Popular</Link></li>
-                <li><Link to="product" className={styles.nav__link}>Product</Link></li>
-                <li><Link to="contact" className={styles.nav__link}>Contact</Link></li>
+                <li><Link to="/" className={styles.nav__link} onClick={()=>handleOpen()}>Home</Link></li>
+                <li><Link to="about" className={styles.nav__link} onClick={()=>handleOpen()}>About US</Link></li>
+                <li><Link to="popular" className={styles.nav__link} onClick={()=>handleOpen()}>Popular</Link></li>
+                <li><Link to="product" className={styles.nav__link} onClick={()=>handleOpen()}>Product</Link></li>
+                <li><Link to="contact" className={styles.nav__link} onClick={()=>handleOpen()}>Contact</Link></li>
             </ul>
             <div className={styles.nav__close} id={styles.nav__close}>
              <Button onClick={handleOpen}><svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg></Button>

@@ -127,7 +127,9 @@ img {
 }
 
 .main {
+  margin-top: var(--header-height);
   overflow: hidden;
+  /* padding-block: 4.5rem 3.5rem; */
 }
 
 .icon{

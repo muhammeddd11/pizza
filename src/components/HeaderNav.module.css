@@ -32,7 +32,7 @@
         width:100%;
         padding-block: 4.5rem 3.5rem;
         box-shadow:0 4px 16px hsla(353, 100%, 8%,0.2);
-        transition:top 0.4s;
+        /* transition:top 0.4s; */
     }
 }
 .nav__list{
@@ -58,7 +58,7 @@
     transition: width 0.4s;
 }
 .nav__link:hover:after{
-    width: 100%;
+    width: 60%;
 }
 .nav__close{
     position:absolute;

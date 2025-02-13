@@ -1,0 +1,60 @@
+.popular__container{
+    grid-template-columns: 100%;
+    row-gap: 3rem;
+    padding-bottom:2rem;
+}
+.popular__data .section__title{
+    margin-bottom: 1rem;
+}
+.popular__description{
+    text-align: center;
+}
+.popular__cursole{
+    position:relative;
+}
+.popular__dish{
+    width: 220px;
+    filter: var(--shadow-big-img);
+    position: absolute;
+    inset: 0;
+    top:-0.85rem;
+    margin-inline: auto;
+    z-index: 1;
+}
+.popular__card,.popular__img{
+    position:relative;
+    width:180px;
+    margin-inline: auto;
+    z-index: 2;
+}
+.popular__title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-top: 4rem;
+    text-align: center;
+}
+.btn{
+    background-color: var(--body-color);
+    cursor: pointer;
+    position: absolute;
+}
+.btn:hover{
+    background-color: var(--container-color);
+}
+.btn__back{
+    top:5rem;
+    left:-4rem;
+} 
+.btn__next{
+    top:5rem;
+    right:-4rem;
+} 
+.derived__img{
+    width: 200px;
+    position:absolute;
+}
+.derived__prev {
+    position: absolute;
+    top: 5rem; /* Align with the button */
+    left: -6rem; /* Move further left from the button */
+}
