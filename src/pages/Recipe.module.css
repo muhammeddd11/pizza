@@ -1,0 +1,28 @@
+.recipe{
+    background-color: var(--container-color);
+}
+.recipe__container{
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+.recipe__img{
+    width: 60px;
+    filter: var(--shadow-small-img);
+}
+.recipe__name{
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.25rem;
+}
+.recipe__description{
+    font-size: var(--small-font-size);
+}
+.recipe__ingredients{
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+.recipe__img__pizza{
+    width: 320px;
+    justify-self: center;
+    filter: var(--shadow-big-img);
+}

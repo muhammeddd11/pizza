@@ -1,8 +1,8 @@
 import styles from './Button.module.css'
 //eslint-disable-next-line
-function Button({type,children,onClick}) {
+function Button({children,onClick,className}) {
   return (
-    <button className={styles.btn} onClick={onClick}>
+    <button className={`${styles.btn} ${className}`} onClick={onClick}>
       {children}
     </button>
   );
