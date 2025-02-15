@@ -92,3 +92,18 @@
     left:-0.5rem;
     top:2rem;
 }
+/* ================Small devices ============ */
+@media screen and (max-width:320px){
+
+    .home__img{
+        width: 280px;
+    }
+}
+/* ================medium devices ============ */
+
+@media screen and (min-width:576px) {
+    .home__container{
+        grid-template-columns: 380px;
+        justify-content: center;
+    }
+}

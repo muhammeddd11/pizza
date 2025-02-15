@@ -5,6 +5,8 @@
     border-radius: 3rem;
     overflow: hidden;
     row-gap: 3rem;
+    max-width: 1120px;
+    margin-inline: 1.5rem;
 }
 .contact__container .section__title, 
 .contact__title, 
@@ -34,4 +36,51 @@
 }
 .contact__address{
     font-style: normal;
+}
+.contact__map{
+    color: var(--first-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+.link{
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+.link:visited,.link:visited{
+    color: var(--first-color);
+}
+.contact__image{
+    justify-self: center;
+    margin-top: 2rem;
+}
+.contact__img{
+    width:300px;
+}
+.contact__sticker_1 , .contact__sticker_2, .contact__sticker_3{
+    position: absolute;
+    width: 40px;
+    opacity: 0.7;
+}
+.contact__sticker_1 {
+    top: 8rem;
+    left: 1.5rem;
+}
+.contact__sticker_2 {
+    right: 1.5rem;
+    bottom: 23rem;
+}
+.contact__sticker_3 {
+    left: 2rem;
+    bottom: 6rem;
+}
+/* ================medium devices ============ */
+@media screen and (min-width:576px) {
+    .contact__container{
+        width: 450px;
+        margin-inline:auto;
+    }
 }

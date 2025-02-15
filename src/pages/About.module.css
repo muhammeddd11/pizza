@@ -26,3 +26,11 @@
     width: 320px;
     justify-self: center;
 }
+/* ================medium devices ============ */
+
+@media screen and (min-width:576px) {
+    .about__container{
+        grid-template-columns: 380px;
+        justify-content: center;
+    }
+}

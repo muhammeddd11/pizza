@@ -10,6 +10,7 @@ import PageNotFound from "./pages/PageNotFound";
 
 import Header from './components/Header'
 import Main from './components/Main'
+import Footer from './components/Footer';
 function App() {
   
   return <>
@@ -26,6 +27,7 @@ function App() {
       <Route path="*" element={<PageNotFound />}/>
     </Routes>
   </Main>
+  <Footer />
   </BrowserRouter>
   </> 
 }

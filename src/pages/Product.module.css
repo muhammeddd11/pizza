@@ -51,3 +51,19 @@
 .product__card:hover .product__img{
     transform:translateY(-0.5rem)
 }
+/*================breakppints==========*/
+@media (max-width:383px){
+    .product__container{
+        grid-template-columns: 150px;
+        justify-content: center;
+        row-gap: 4rem;
+    }
+}
+/* ================medium devices ============ */
+
+@media screen and (min-width:576px) {
+    .product__container{
+        grid-template-columns: repeat(2,160px);
+        justify-content: center;
+    }
+}

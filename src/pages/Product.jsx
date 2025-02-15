@@ -5,7 +5,7 @@ const products = [{name:'Vegetarian \n  Pizza',price:'$15'},{name:'Italian \n  P
 
 function Products() {
   return (
-    <section className={`${styles.product__container} section`}>
+    <section className={`section`}>
       <h2 className='section__title'>The Most <br/> Devoured Pizzas</h2>
       <div className={`${styles.product__container} container grid`}>
         

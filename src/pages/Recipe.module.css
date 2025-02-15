@@ -26,3 +26,11 @@
     justify-self: center;
     filter: var(--shadow-big-img);
 }
+/* ================medium devices ============ */
+
+@media screen and (min-width:576px) {
+    .recipe__container{
+        grid-template-columns: 380px;
+        justify-content: center;
+    }
+}
