@@ -7,14 +7,17 @@ function Recipe() {
     <section className={`${styles.recipe} section`}>
         <h2 className="section__title">Fresh And <br/> Natural Ingredients</h2>
         <div className={`${styles.recipe__container} container grid`}>
-            {ingredients.map(ingredient=>
-            <div className={styles.recipe__ingredients} key={ingredient.ingredName}>
-                <img src={`recipe-${ingredient.ingredName==="vegetables"?"tomato":ingredient.ingredName}.png`} alt={`${ingredient.ingredName}`} className={styles.recipe__img} />
-                <div>
-                    <h3 className={styles.recipe__name}>{ingredient.ingredName}</h3>
-                    <p className={styles.recipe__description}>{ingredient.ingredDescrip}</p>
-                </div>
-            </div>)}
+          <div className={styles.recipe__ingredients}>
+
+              {ingredients.map(ingredient=>
+              <div className={styles.recipe__ingredient} key={ingredient.ingredName}>
+                  <img src={`recipe-${ingredient.ingredName==="vegetables"?"tomato":ingredient.ingredName}.png`} alt={`${ingredient.ingredName}`} className={styles.recipe__img} />
+                  <div>
+                      <h3 className={styles.recipe__name}>{ingredient.ingredName}</h3>
+                      <p className={styles.recipe__description}>{ingredient.ingredDescrip}</p>
+                  </div>
+               </div>)}
+          </div>
             <img src="recipe-img.png" alt="pizza" className={styles.recipe__img__pizza}/>
         </div>
     </section>

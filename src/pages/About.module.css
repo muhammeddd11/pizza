@@ -34,3 +34,29 @@
         justify-content: center;
     }
 }
+@media screen and (min-width:1150px){
+    .about__container{
+        grid-template-columns: 450px 440px;
+        align-items: center;
+        column-gap: 6rem;
+    }
+    .about__img{
+        order:-1;
+        width: 450px;
+    }
+    .about__data{
+        text-align: initial;
+    }
+    .about__data,.section__title{
+        margin-bottom: 1.5rem;
+        text-align: initial;
+    }
+    .about__description{
+        margin-bottom: 3.5rem;
+    }
+    .about__sticker{
+        width: 50px;
+        right: 6rem;
+        bottom: 4rem;
+    }
+}

@@ -18,9 +18,14 @@
 }
 .recipe__ingredients{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     column-gap: 0.75rem;
 }
+.recipe__ingredient{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem; 
+    margin-bottom: 1rem; }
 .recipe__img__pizza{
     width: 320px;
     justify-self: center;
@@ -32,5 +37,29 @@
     .recipe__container{
         grid-template-columns: 380px;
         justify-content: center;
+    }
+}
+@media screen and (min-width:1150px){
+    .recipe__container{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 6rem;
+        padding-block: 3rem;
+
+    }
+    .recipe__ingredient{
+        column-gap: 1.5rem;
+    }
+    .recipe__img{
+        width: 80px;
+    }
+    .recipe__name{
+        font-size: var(--h3-font-size);
+    }
+    .recipe__description{
+        font-size: var(--normal-font-size);
+    }
+    .recipe__img__pizza{
+        width:550px;
     }
 }

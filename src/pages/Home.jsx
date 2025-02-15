@@ -13,11 +13,10 @@ function Home() {
               and make your family moments more 
               memorable, place your order now.  
             </p>
-            <Link to="products" className={`${styles.button} button`}>Order Pizza Now</Link>
+            <Link to="product" className={`${styles.button} button`}>Order Pizza Now</Link>
             <img src="sticker-pizza.svg" className={styles.home__sticker_1} alt="home sticker"/>
             <img src="sticker-leaf.svg" className={styles.home__sticker_2} alt="home sticker"/>
           </div>
-      </div>
       <div className={styles.home__img}>
           <img src="home-pizza.png" alt="home" className={`${styles.home__pizza}`}/>
           <img src="home-board.png" alt="home" className={`${styles.home__board}`}/>
@@ -29,6 +28,7 @@ function Home() {
           <img src="home-pepperoni.png" alt="home" className={`${styles.home__pepperoni} ${styles.home__ingredient}`}/>
           <img src="home-tomato.png" alt="home" className={`${styles.home__tomato} ${styles.home__ingredient}`}/>
 
+      </div>
       </div>
     </section>
   );

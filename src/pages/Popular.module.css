@@ -66,3 +66,50 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width:768px){
+    .popular__cursole{
+        width: 600px;
+        overflow-x: clip;
+        justify-self: center;
+    }
+    .popular__img{
+        width: 400px;
+    }
+  }
+@media screen and (min-width:1150px){
+    .popular__container{
+
+        grid-template-columns: 470px;
+        row-gap: 5rem;
+        padding-bottom: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .popular__data ,.section__title{
+        margin-bottom: 1.5rem;
+    }
+    .popular__cursole{
+        width: 470px;
+    }
+    .popular__card,.popular__img{
+        width:340px;
+    }
+    .popular__dish{
+        width: 390px;
+        top:-1.5rem;
+    }
+    .btn__back{
+        top:10rem;
+        left:-4rem;
+    } 
+    .btn__next{
+        top:10rem;
+        right:-4rem;
+    }
+    .popular__title{
+        margin-top: 3rem;
+        font-size: var(--h2-font-size);
+    } 
+    
+}
